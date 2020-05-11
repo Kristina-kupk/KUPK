@@ -1,0 +1,161 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <TabControl>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Услуги"/>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="440*"/>
+                            <ColumnDefinition Width="290*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <DataGrid Grid.RowSpan="6" x:Name="dgUsl" Margin="10" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Код услуги" Binding="{Binding id_uslugi}"/>
+                                <DataGridTextColumn Header="Название услуги" Binding="{Binding name_uslugi}"/>
+                                <DataGridTextColumn Header="Цена услуги" Binding="{Binding cena_uslugi}"/>
+                                <DataGridCheckBoxColumn Header="Статус услуги" Binding="{Binding status_uslugi}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="btnNewUsl" Grid.Column="1" Margin="80 20 80 20" Content="Новая услуга" Click="btnNewUsl_Click"/>
+                        <TextBlock Grid.Column="1" Grid.Row="1" Margin="5 0 0 0" Text="Название услуги"/>
+                        <TextBox x:Name="tbNazUsl" Grid.Column="1" Grid.Row="1" Margin="5 20 80 20" IsEnabled="False" TextChanged="tbNazUsl_TextChanged"/>
+                        <TextBlock Grid.Column="1" Grid.Row="2" Margin="5 0 0 0" Text="Цена"/>
+                        <TextBox x:Name="tbPrice" Grid.Column="1" Grid.Row="2" Margin="5 20 80 20" IsEnabled="False"/>
+                        <Button x:Name="btnNewUslSave" Grid.Column="1" Grid.Row="3" Margin="220,20,13,20" Content="OK" IsEnabled="False" Visibility="Visible" Click="btnNewUslSave_Click"/>
+                        <Button x:Name="btnVipUsl" Grid.Column="1" Grid.Row="3" Margin="10,20,130,20" Content="Изменение состояния услуги" Click="BtnVipUsl_Click"/>
+
+                        <Button x:Name="btnRedUslSave" Grid.Column="1" Grid.Row="3" Margin="220,20,13,20" Content="OK" IsEnabled="False" Visibility="Hidden" Click="btnRedUslSave_Click"/>
+                        <Button x:Name="btnRedUsl" Grid.Column="1" Grid.Row="4" Margin="20 20 170 20" Content="Редактировать" Click="btnRedUsl_Click"/>
+                        <Button x:Name="btnCansel" Grid.Column="1" Grid.Row="4" Margin="170 20 20 20" Content="Отмена" IsEnabled="False" Click="btnCansel_Click"/>
+                        <Button x:Name="btnDelete" Grid.Column="1" Grid.Row="5" Margin="170 20 20 20" Content="Удалить" Click="btnDelete_Click"/>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Клиенты"/>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="440*"/>
+                            <ColumnDefinition Width="290*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <DataGrid x:Name="dgKlient" Grid.RowSpan="3" Margin="10 10 10 80" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID клиента" Binding="{Binding id_kl}"/>
+                                <DataGridTextColumn Header="ФИО" Binding="{Binding fio_kl}"/>
+                                <DataGridTextColumn Header="Телефон" Binding="{Binding tel_kl}"/>
+                                <DataGridCheckBoxColumn Header="Статус клиента" Binding="{Binding status_kl}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="btnNewKl" Grid.Column="1" Margin="90 40 105 35" Content="Новый клиент" Click="btnNewKl_Click"/>
+                        <TextBlock Grid.Column="2" Grid.Row="1" Margin="5 0 0 0" Text="ФИО"/>
+                        <TextBox x:Name="tbFIONew" Grid.Column="2" Grid.Row="1" Margin="5 20 80 85" IsEnabled="False" TextChanged="tbFIONew_TextChanged"/>
+                        <TextBlock Grid.Column="2" Grid.Row="1" Margin="5 60 0 0" Text="Номер"/>
+                        <TextBox x:Name="tbNomNew" Grid.Column="2" Grid.Row="1" Margin="5 85 80 20" MaxLength="12" Text="+7" IsEnabled="False" PreviewTextInput="tbNomNew_PreviewTextInput" TextChanged="tbNomNew_TextChanged"/>
+                        <Button x:Name="btnSaveNewKl" Grid.Column="1" Grid.Row="2" Margin="180 80 10 20" Content="OK" IsEnabled="False" Click="btnSaveNewKl_Click"/>
+                        <Button x:Name="btnSaveRedKl" Grid.Column="1" Grid.Row="2" Margin="180 80 10 20" Content="OK" Visibility="Hidden" Click="btnSaveRedKl_Click"/>
+                        <Button x:Name="btnRedKl" Grid.Column="0" Grid.Row="2" Margin="20 80 320 20" Content="Редактировать" Click="btnRedKl_Click"/>
+                        <Button x:Name="btnCanKl" Grid.Column="0" Grid.Row="2" Margin="320 80 20 20" Content="Отмена" IsEnabled="False" Click="btnCanKl_Click"/>
+                        <Button x:Name="btnDelKl" Grid.Column="0" Grid.Row="2" Margin="150 80 150 20" Content="Удалить" Click="btnDelKl_Click"/>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Заказы"/>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="266*"/>
+                            <ColumnDefinition Width="127*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <DataGrid x:Name="dgZakaz" Grid.RowSpan="2" Margin="10" AutoGenerateColumns="False" SelectionChanged="dgZakaz_SelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID заказа" Binding="{Binding id_zakaz}"/>
+                                <DataGridTextColumn Header="Название услуги" Binding="{Binding name_uslugi}"/>
+                                <DataGridTextColumn Header="Цена услуги" Binding="{Binding cena_uslugi}"/>
+                                <DataGridTextColumn Header="Дата услуги" Binding="{Binding date_zak}" Width="80"/>
+                                <DataGridCheckBoxColumn Header="Статус заказа" Binding="{Binding status_zak, Mode=OneWay}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="btnNewZak" Grid.Column="1" Margin="90 40 80 50" Content="Новый заказ" Click="btnNewZak_Click"/>
+                        <TextBlock Grid.Column="1" Grid.Row="1" Margin="5 0 0 0" Text="Название услуги"/>
+                        <ComboBox x:Name="cbNazUcl" Grid.Column="1" Grid.Row="1" Margin="5 20 100 85" IsEnabled="False"/>
+                        <TextBlock Grid.Column="1" Grid.Row="1" Margin="5 60 0 0" Text="ФИО клиента"/>
+                        <ComboBox x:Name="cbFIOKl" Grid.Column="1" Grid.Row="1" Margin="5 85 100 20" IsEnabled="False"/>
+                        <TextBlock Grid.Column="1" Grid.Row="2" Margin="5 0 0 0" Text="Дата"/>
+                        <DatePicker x:Name="dpDate" Grid.Column="1" Grid.Row="2" Margin="5 20 120 85" IsEnabled="False" SelectedDateFormat="Short"/>
+                        <Button x:Name="btnSaveNewZak" Grid.Column="1" Grid.Row="2" Margin="170 20 10 85" Content="OK" IsEnabled="False" Click="btnSaveNewZak_Click"/>
+                        <TextBlock Grid.Column="0" Grid.Row="2" Margin="10 0 0 0" Text="Информация о клиенте:"/>
+                        <DataGrid x:Name="dgInfoKl" Grid.Row="2" Margin="10 20 10 10" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID клиента" Binding="{Binding id_kl}"/>
+                                <DataGridTextColumn Header="ФИО" Binding="{Binding fio_kl}"/>
+                                <DataGridTextColumn Header="Телефон" Binding="{Binding tel_kl}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="btnVipZak" Grid.Column="1" Grid.Row="2" Margin="150 80 10 20" Content="Выполнено" Click="btnVipZak_Click"/>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Запросы"/>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <Grid>
+                        <DataGrid x:Name="dgZap" Margin="250 10 10 10" AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID заказа" Binding="{Binding id_zakaz}"/>
+                                <DataGridTextColumn Header="Название услуги" Binding="{Binding name_uslugi}"/>
+                                <DataGridTextColumn Header="Цена услуги" Binding="{Binding cena_uslugi}"/>
+                                <DataGridTextColumn Header="Дата услуги" Binding="{Binding date_zak}" Width="80"/>
+                                <DataGridCheckBoxColumn Header="Статус заказа" Binding="{Binding status_zak, Mode=OneWay}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock Margin="10 5 0 0" Text="Выборка по дате"/>
+                        <DatePicker Name="dpZapDate" Margin="10 25 550 335"/>
+                        <Button x:Name="btnOKDate" Content="OK" Margin="150 60 550 300" Click="btnOKDate_Click"/>
+                        <TextBlock Margin="10 90 0 0" Text="Выборка по услуге"/>
+                        <ComboBox Name="cbZapUsl" Margin="10 110 550 248"/>
+                        <Button x:Name="btnOKUsl" Content="OK" Margin="150 145 550 215" Click="btnOKUsl_Click"/>
+                        <TextBlock Margin="10 170 0 0" Text="Выборка по клиенту"/>
+                        <ComboBox Name="cbZapKl" Margin="10 190 550 170"/>
+                        <Button x:Name="btnOKKl" Content="OK" Margin="150 225 550 135" Click="btnOKKl_Click"/>
+                    </Grid>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

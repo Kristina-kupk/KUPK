@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Atele" Class="DataClasses4DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-R346Q9L;Initial Catalog=Atele;Integrated Security=True" SettingsObjectName="WpfApp1.Properties.Settings" SettingsPropertyName="AteleConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Zakaz" Member="Zakaz">
+    <Type Name="Zakaz">
+      <Column Name="id_zakaz" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_klzak" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_uslzak" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date_zak" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="status_zak" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
