@@ -1,0 +1,51 @@
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\bin\Debug\Taxi1.exe.config
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\bin\Debug\Taxi1.exe
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\bin\Debug\Taxi1.pdb
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1.csprojAssemblyReference.cache
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\MainWindow.g.cs
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window1.g.cs
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window2.g.cs
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window3.g.cs
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window4.g.cs
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\App.g.cs
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1_MarkupCompile.cache
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1_MarkupCompile.lref
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\App.baml
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\MainWindow.baml
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window1.baml
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window2.baml
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window3.baml
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Window4.baml
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1.g.resources
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1.Properties.Resources.resources
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1.csproj.GenerateResource.cache
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1.csproj.CoreCompileInputs.cache
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1.exe
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\Taxi1.pdb
+C:\Users\Кристина\Desktop\Taxi1\Taxi1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.csprojAssemblyReference.cache
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.csproj.ResolveComReference.cache
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\MainWindow.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window1.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window2.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window3.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window4.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\App.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1_MarkupCompile.cache
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1_MarkupCompile.lref
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.exe
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.pdb
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\bin\Debug\Taxi1.exe.config
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\bin\Debug\Taxi1.exe
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\bin\Debug\Taxi1.pdb
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\App.baml
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\MainWindow.baml
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window1.baml
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window2.baml
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window3.baml
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Window4.baml
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.g.resources
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.Properties.Resources.resources
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.csproj.GenerateResource.cache
+C:\Users\Кристина\Desktop\Taxi1 — копия\Taxi1\obj\Debug\Taxi1.csproj.CoreCompileInputs.cache

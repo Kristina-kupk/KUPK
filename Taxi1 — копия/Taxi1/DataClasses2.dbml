@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Taxi" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-R346Q9L;Initial Catalog=Taxi;Integrated Security=True" SettingsObjectName="Taxi1.Properties.Settings" SettingsPropertyName="TaxiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Voditeli" Member="Voditeli">
+    <Type Name="Voditeli">
+      <Column Name="ID_Voditel" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FIO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Date rozdeniya]" Member="Date_rozdeniya" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="[seriya pasporta]" Member="seriya_pasporta" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[nomer pasporta]" Member="nomer_pasporta" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Date vydan pasport]" Member="Date_vydan_pasport" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="[Marka mashiny]" Member="Marka_mashiny" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tsvet" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[kategoriya vozhdeniya]" Member="kategoriya_vozhdeniya" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Nomer prav]" Member="Nomer_prav" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Data vidachi]" Member="Data_vidachi" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="[okonchaniye prav]" Member="okonchaniye_prav" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Nomer_mash" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Vidan_pasport" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

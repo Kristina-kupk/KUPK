@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Taxi" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-R346Q9L;Initial Catalog=Taxi;Integrated Security=True" SettingsObjectName="Taxi1.Properties.Settings" SettingsPropertyName="TaxiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Zakaz" Member="Zakaz">
+    <Type Name="Zakaz">
+      <Column Name="ID_Zakaz" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nomer_Tel" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[adres dostavki]" Member="adres_dostavki" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[adres otpravki]" Member="adres_otpravki" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Statyz_zakaz" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Tsena_proyeezda" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Oplata" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
